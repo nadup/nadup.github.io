@@ -1,0 +1,42 @@
+
+/*por tag */
+h2 {color:cadetblue ; font-size: 36pt;}
+p {color:cornflowerblue; font-family: monospace; font-size: 16pt;}
+
+/*por id*/
+#titulo-1{font-style: italic;}
+#titulo-2{font-weight:900;}
+
+/*por clase*/ 
+.ultimo{color:rgb(11, 186, 245)}
+.base{border-width: 2px; 
+border-style: solid; 
+border-color:blueviolet;
+padding: 1em;
+margin: 4em 3em 2em 1em;}
+.in{border: 1px solid royalblue; 
+height: 10em; 
+background-color: navajowhite;
+padding: 1em;
+margin: 2em;}
+.out{border: 3px dashed lightcyan;
+height: 10em;
+background-color: plum; 
+display: table;
+padding: 1em;}
+
+
+/*combinados*/
+p.ultimo{color:midnightblue}
+.par.ultimo{font-weight: bold;}
+
+/*alternativos*/
+h2,h3{color:rebeccapurple; font-size: 34pt; font-family: monospace;}
+
+/*descendiente directo*/
+.base > h2 {text-align: right}
+.base > p > span{text-decoration: underline;}
+.out > .in{font-weight: 500; font-style: oblique; color:purple}
+
+/*descendiente indirecto*/
+.base .ejemplo{font-family: sans-serif;}
